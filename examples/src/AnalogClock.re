@@ -1,30 +1,14 @@
 [@bs.val] external requireCSS: string => unit = "require";
 
 requireCSS("./AnalogClock.css");
-module UseClock2 = {
-  let useClock = () => {
-    let (date, setDate) = React.useState(() => Js.Date.now());
-    let tick = () => {
-      setDate(_ => Js.Date.now());
-    };
-    React.useEffect(() => {
-      let ticker = Js.Global.setInterval(() => tick(), 1000);
-      Some(() => Js.Global.clearInterval(ticker));
-    });
-    date;
-  };
-};
+
 open ReasonUseClockHook;
-// open ReasonHooksLib;
 [@react.component]
 let make = () => {
-  // let date = UseClock2.useClock();
-  // let date = ReasonUseClockHook.UseClock.useClock();
+
   let date = UseClock.useClock();
-    // let date = Lifecycle.useClock();
-    // let date2 = UseClock.useClock();
+
   Js.log2("Date", date);
-  // Js.log2("Date2", date2);
   let secondstyle =
     ReactDOMRe.Style.make()
     ->ReactDOMRe.Style.unsafeAddProp(
