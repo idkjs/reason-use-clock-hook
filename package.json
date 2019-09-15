@@ -1,0 +1,58 @@
+{
+  "name": "reason-use-clock-hook",
+  "version": "1.0.6",
+  "description": "reason-use-clock-hook",
+  "scripts": {
+    "build": "bsb -make-world",
+    "start": "bsb -make-world -w",
+    "example": "yarn build && parcel ./example/index.html",
+    "clean": "bsb -clean-world",
+    "test": "yarn build & jest",
+    "webpack": "webpack -w",
+    "webpack:production": "NODE_ENV=production webpack",
+    "server": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idkjs/reason-use-clock-hook.git"
+  },
+  "keywords": [
+    "reason",
+    "hooks",
+    "react-hooks",
+    "reason-hooks",
+    "reason-react",
+    "utils",
+    "lib",
+    "use-clock",
+    "clock",
+    "timer"
+  ],
+  "peerDependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "devDependencies": {
+    "@glennsl/bs-jest": "^0.4.8",
+    "bs-platform": "^5.0.4",
+    "bsb-js": "^1.1.7",
+    "html-webpack-plugin": "^3.2.0",
+    "parcel-bundler": "^1.12.3",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-test-renderer": "^16.9.0",
+    "reason-react": "^0.7.0",
+    "webpack": "^4.0.1",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.1.8"
+  },
+  "dependencies": {
+    "reason-hooks-testing-library": "^0.2.0"
+  },
+  "author": "Alain Armand",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/idkjs/reason-use-clock-hook/issues"
+  },
+  "homepage": "https://github.com/idkjs/reason-use-clock-hook"
+}
