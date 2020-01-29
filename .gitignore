@@ -5,13 +5,10 @@ npm-debug.log
 /lib/bs/
 /node_modules/
 coverage
-.cache
-dist
 
 npm-debug.log*
+pnpm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-examples/.cache
 examples/lib/bs/src
 pnpm-lock.yaml
-build
