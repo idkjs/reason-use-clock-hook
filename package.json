@@ -15,13 +15,9 @@
     "webpack": "webpack -w",
     "server": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1",
-<<<<<<< HEAD
     "build:production": "NODE_ENV=production webpack",
     "format": "refmt src/*.re",
     "predeploy": "rm -rf build && npm run build:production",
-=======
-    "predeploy": "rm -rf build && npm run webpack:production example/index.html --public-url /reason-use-clock-hook-demo",
->>>>>>> 648aa2e160f7d462f61bc5a03fb50221af29c01d
     "deploy": "gh-pages -d build"
   },
   "repository": {
