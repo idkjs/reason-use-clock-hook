@@ -5,12 +5,11 @@
   "scripts": {
     "build": "bsb -make-world",
     "start": "bsb -make-world -w",
-    "example": "yarn build && parcel ./example/index.html",
     "clean": "bsb -clean-world",
-    "test": "yarn build & jest",
     "webpack": "webpack -w",
     "webpack:production": "NODE_ENV=production webpack",
-    "server": "webpack-dev-server"
+    "server": "webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -29,24 +28,22 @@
     "timer"
   ],
   "peerDependencies": {
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
   },
   "devDependencies": {
-    "@glennsl/bs-jest": "^0.4.8",
-    "bs-platform": "^5.0.4",
-    "bsb-js": "^1.1.7",
+    "bs-platform": "^7.0.1",
+    "css-loader": "^3.2.0",
     "html-webpack-plugin": "^3.2.0",
-    "parcel-bundler": "^1.12.3",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "react-test-renderer": "^16.9.0",
-    "reason-react": "^0.7.0",
-    "webpack": "^4.0.1",
-    "webpack-cli": "^3.1.1",
+    "reason-react": ">=0.7.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.1.8"
   },
   "dependencies": {
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
     "reason-hooks-testing-library": "^0.2.0"
   },
   "author": "Alain Armand",

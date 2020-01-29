@@ -10,15 +10,11 @@
     {
       "dir": "example",
       "type": "dev"
-    },
-    {
-      "dir": "__tests__",
-      "type": "dev"
     }
   ],
   "package-specs": [{
     "module": "commonjs",
-    "in-source": false
+    "in-source": true
   }],
   "suffix": ".bs.js",
   "namespace": true,
@@ -26,8 +22,6 @@
     "reason-react"
   ],
   "bs-dev-dependencies": [
-    "@glennsl/bs-jest",
-    "reason-hooks-testing-library"
   ],
   "refmt": 3
 }

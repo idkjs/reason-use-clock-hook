@@ -1,6 +1,6 @@
 [@bs.val] external requireCSS: string => unit = "require";
 
-// requireCSS("./AnalogClock.css");
+requireCSS("./AnalogClock.css");
 module UseClock2 = {
   let useClock = () => {
     let (date, setDate) = React.useState(() => Js.Date.now());
